@@ -1,9 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--
     <string name="app_name">ViewSample</string>
     -->
     <string name="app_name">商品名サンプル</string>
-    <string name="tv_msg">名前を入力してください</string>
+    <string name="tv_msg">お名前を入力してください</string>
+
+    <string name="bt_save">保存</string>
+
+    <string name="cb_drink">ドリンク</string>
+    <string name="cb_food">フード</string>
+
+    <string name="rb_male">男</string>
+    <string name="rb_female">女</string>
+
+    <string-array name="sp_curryList">
+        <item>ドライカレー</item>
+        <item>ラーメン</item>
+        <item>うどん</item>
+        <item>チキン南蛮</item>
+    </string-array>
 
 </resources>

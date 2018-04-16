@@ -1,18 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewSampleActivity">
+    android:background="#A1A9BA"
+    android:orientation="vertical">
 
+    <!-- text view -->
     <TextView
+        android:id="@+id/tvLabelInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:text="@string/tv_msg"
+        android:textSize="25sp" />
+
+    <!-- text input -->
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:inputType="text" />
+
+    <!-- check box with this layout-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#df7401"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginRight="25dp"
+            android:text="@string/cb_drink"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginRight="25dp"
+            android:text="@string/cb_food"/>
+    </LinearLayout>
+
+    <!-- radio button with this layout -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp"
+        android:background="#df7401"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:padding="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbMale"
+            android:text="@string/rb_male"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="#ffffff"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbFemale"
+            android:text="@string/rb_female"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="#ffffff"/>
+    </RadioGroup>
+
+    <!-- check string array -->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/spCurryList"
+        android:entries="@array/sp_curryList"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"/>
+
+    <!-- save button -->
+    <Button
+        android:id="@+id/bt_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="10dp"
+        android:text="@string/bt_save" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
