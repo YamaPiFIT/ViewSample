@@ -21,4 +21,11 @@
         <item>チキン南蛮</item>
     </string-array>
 
+    <string-array name="lv_foodList">
+        <item>ドライカレー</item>
+        <item>ラーメン</item>
+        <item>うどん</item>
+        <item>チキン南蛮</item>
+    </string-array>
+
 </resources>
